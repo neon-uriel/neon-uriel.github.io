@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "goat"
+title: "GOAT"
 category: GOAT
-permalink: /categories/goat/
+permalink: /categories/GOAT/
 ---
