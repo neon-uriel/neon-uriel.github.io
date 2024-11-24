@@ -1,0 +1,35 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+
+<main>
+    {% include header.html %}
+
+    <h1>{{ page.title }}</h1>
+    <i>{{ page.date | date: "%b %d, %Y" }}</i>
+    <h3 class="subtitle">{{ page.subtitle }}</h3>
+
+    {% if page.categories %}
+    <h4>
+        {% for category in page.categories %}
+        <a href="/categories/{{ category }}">>{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+    </h4>
+    {% endif %}
+
+
+    {% if page.tags %}
+    <h5>
+        {% for tag in page.tags %}
+        <a href="/tagged/{{ tag }}">#{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+    </h5>
+    {% endif %}
+
+    {{ content }}
+
+</main>
+
+{% include footer-post.html %}

@@ -1,0 +1,23 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+
+<main>
+    {% include header.html %}
+    <ul>
+        {% for category in site.categories %}
+        <li type="square">
+            <h2>{{ category.category }}</h2>
+            {% for post in site.posts %}
+            {% if post.categories contains category.category %}
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+        </li>
+        {% endfor %}
+    </ul>
+</main>
+
+{% include footer-post.html %}
