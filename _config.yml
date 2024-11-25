@@ -28,9 +28,9 @@ compress_html:
   ignore:
     envs: []
 
-# sass:
-#   sass_dir: css
-#   style:    compressed
+sass:
+  sass_dir: _sass
+  style:    compressed
 
 collections:
   my_tags:
@@ -73,8 +73,6 @@ Blog: /blog
 About: /about
 
 Works: /categories/works
-
-Contact: /contact
 
 Categories: /categories
 

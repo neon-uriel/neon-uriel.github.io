@@ -6,18 +6,20 @@ layout: compress
 
 <main>
     {% include header.html %}
-    <ul>
-        {% for category in site.categories %}
-        <li type="square">
-            <h2>{{ category.category }}</h2>
-            {% for post in site.posts %}
-            {% if post.categories contains category.category %}
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-        </li>
-        {% endfor %}
-    </ul>
+    <div>
+        <ul>
+            {% for category in site.categories %}
+            <li type="square">
+                <h2>{{ category.categories }}</h2>
+                {% for post in site.posts %}
+                {% if post.categories contains category.category %}
+            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </main>
 
 {% include footer-post.html %}
