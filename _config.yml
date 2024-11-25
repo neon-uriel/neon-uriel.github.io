@@ -29,7 +29,7 @@ compress_html:
     envs: []
 
 sass:
-  sass_dir: _sass
+  # sass_dir: _sass
   style:    compressed
 
 collections:
