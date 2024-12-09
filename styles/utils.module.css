@@ -50,3 +50,22 @@
 .lightText {
   color: #666;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+
+.navList {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.navItem {
+  margin: 1rem;
+}

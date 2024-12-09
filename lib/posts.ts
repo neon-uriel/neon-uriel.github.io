@@ -19,6 +19,7 @@ const postsDirectory = path.join(process.cwd(), 'posts');
 type FrontMatter = {
   title: string;
   date: Date;
+  categories: string[];
 };
 
 
@@ -96,4 +97,33 @@ export async function getPostData(id) {
     contentHtml,
     ...matterResult.data,
   };
+}
+
+export function getAllCategoryPaths() {
+  const fileNames = fs.readdirSync(postsDirectory);
+  const allPostsData = fileNames.map((fileName) => {
+    const id = fileName.replace(/\.md$/, '');
+    const fullPath = path.join(postsDirectory, fileName);
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const matterResult = typedMatter<FrontMatter>(fileContents);
+    return {
+      id,
+      ...matterResult.data,
+    };
+  });
+  const categories = allPostsData.reduce((acc, post) => {
+    post.categories.forEach((category) => {
+      if (!acc.includes(category)) {
+        acc.push(category);
+      }
+    });
+    return acc;
+  }, []);
+  return categories.map((category) => {
+    return {
+      params: {
+        category,
+      },
+    };
+  });
 }
