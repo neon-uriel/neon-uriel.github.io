@@ -41,7 +41,7 @@ REAPERは初期状態だと、BPM120の四分音符の範囲でしか動くこ�
 [Wavetone](https://ackiesound.ifdef.jp/download.html)でBPMを計りましょう。
 Wavetoneを開いて、自分の曲をドラッグアンドドロップ！出てきたウィンドウの解析ボタンを押しましょう。[\*1](#\*1)
 解析タブからテンポ解析を開き、詳細解析の山に書いてある数字を読みます！
-![スクリーンショット 2024-12-01 004538](https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_1a2f6de4270ffdd47dfd9361250c73be.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1733827448&Signature=UCvXQF%2FqY8R5u7U3ff%2B3BzcDiNs%3D)
+![スクリーンショット 2024-12-01 004538](https://i.imgur.com/JSDrE1S.png)
 
 REAPERのBPMという欄に、計ったBPMを入力します。
 Wavetoneにはほかにも便利機能がたくさんありますが、ここでは省略します！
@@ -52,7 +52,7 @@ REAPERに置いているファイルを一旦すべて消してください！
 BPMの設定をして、再度曲を読み込んでみましょう。
 波形とグリッドがいい感じになるように配置してみてください！
 Alt+左ドラッグで波形をずらしたり、ドラッグで曲を移動したりして下の画像のように合わせましょう。
-![image](https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_55890a5c7c691aa5feda6129642e0883.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1733827468&Signature=jwgVLtXCDRsd7CmrqepgRmY7rWE%3D)
+![image](https://i.imgur.com/yseXSEK.png)
 きっちり合わせてください！
 
 > **小Tips!!**
@@ -62,7 +62,7 @@ Alt+左ドラッグで波形をずらしたり、ドラッグで曲を移動し�
 
 Alt + Lを押して、Gridを1/16に設定しましょう。1/4だとグリッドが大きすぎてとても作れたもんじゃありません。
 
-![image](https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_1f695e670bf8290178c1f422516222da.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1733827486&Signature=aBLxF2vnOvN0TK0QBfycptsyKQc%3D)
+![image](https://i.imgur.com/coM9ZDV.png)
 
 
 
